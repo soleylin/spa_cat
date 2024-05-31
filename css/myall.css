@@ -1,0 +1,155 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
+
+:root {
+  /* 黑色 */
+  --mycolor00: #000000;
+  /* 白色 */
+  --mycolor01: #ffffff;
+  /* content 乳白色 */
+  --mycolor02: #ece4e2;
+  /* body淡粉色 */
+  --mycolor03: #fcd3d1;
+  /* hovertext,banner豆沙偏紫 */
+  --mycolor04: #ad5173;
+  /* footer亮粉色 */
+  --mycolor05: #fe929f;
+  --mycolor06: #e3a6a1;
+  /* menu豆沙色 */
+  --mycolor07: #bc5f6a;
+  --mycolor08: #19b3b1;
+  --mycolor09: #034b61;
+  --mycolor10: #fddcef;
+  --mycolor11: #d5c5e9;
+  --mycolor12: #3a5a69;
+  --mycolor13: #030923;
+  --mycolor14: #7f97bb;
+  --mycolor15: #20646133;
+  --mycolor16: #2c8f8a50;
+  --mycolor17: #fcd3d18a;
+  --mycolor18: #2e4b4970;
+  --mycolor19: #070c0c8e;
+  --mycolor20: #a8deee;
+  --mycolor21: #6626b9;
+  --mycolor22: #f5a517;
+  --mycolor23: #f4c323;
+  --mycolor24: #705429;
+  --mycolor25: #a23d31;
+  --mycolor26: #000000;
+  --mycolor27: #f2f3db;
+  --mycolor28: #9b2424;
+  --mycolor29: #aec9a4;
+  --mycolor30: #40494b;
+  --mycolor31: #c5c5c5;
+  --mycolor32: #b89c78;
+  --bgcolor33: #0000004d;
+  --bgcolor34: #f0d8b733;
+  --bgcolor35: #f0d8b799;
+  --bgcolor36: #f8ebd39c;
+  --mycolor37: #a8845a;
+  --mycolor38: #615445;
+  --bgcolor39: #f8f8f8;
+  --bgcolor40:#f1e6d0;
+  --bgcolor41: #ebd7b31a;
+--bgcolor42: #f3dbaf4d;
+
+}
+
+body {
+  font-family: "Zen Maru Gothic", serif;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.demo {
+  width: 50%;
+  padding: 25px;
+  margin: 25px;
+  border: 3px solid transparent;
+  -moz-border-image: -moz-linear-gradient(
+    top,
+    var(--mycolor21) 0%,
+    var(--mycolor20) 100%
+  );
+  -webkit-border-image: -webkit-linear-gradient(
+    top,
+    var(--mycolor21) 0%,
+    var(--mycolor20) 100%
+  );
+  border-image: linear-gradient(
+    to bottom,
+    var(--mycolor21) 0%,
+    var(--mycolor20) 100%
+  );
+  border-image-slice: 1;
+}
+
+.mr-1 {
+  margin-right: 1px;
+}
+
+.mr-2 {
+  margin-right: 2px;
+}
+
+.mr-3 {
+  margin-right: 3px;
+}
+
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.textcolor01 {
+  color: var(--mycolor01);
+}
+
+.textcolor04 {
+  color: var(--mycolor04);
+}

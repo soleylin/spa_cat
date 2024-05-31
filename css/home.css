@@ -1,0 +1,361 @@
+.tdc {
+  text-align: center;
+}
+.s01 {
+  background-color: var(--mycolor31);
+}
+.modalbody02_line {
+  position: relative;
+}
+.modalbody02_line::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 5px;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel-caption {
+  background-color: var(--bgcolor33);
+}
+.s04_linear-gradient {
+  background: linear-gradient(180deg, var(--bgcolor34), var(--bgcolor35));
+}
+.s04_img {
+  background-image: url(/spa_cat/img/animal/cat/cat-bg-1.jpg);
+  height: 800px;
+  background-attachment: fixed;
+  background-position: -425px;
+}
+.s04_counter_p1 {
+  font-size: 20px;
+}
+.s04_counter_p2 {
+  font-size: 40px;
+}
+.s04_counter_span {
+  font-size: 18px;
+}
+.s05 {
+  background-image: linear-gradient(
+      180deg,
+      var(--bgcolor33),
+      var(--bgcolor36)
+    ),
+    url(/spa_cat/img/animal/cat/cat-w-10-reverse.png);
+  background-attachment: fixed;
+}
+.s05_text01 {
+  background-color: var(--bgcolor33);
+  border-radius: 10px;
+  color: var(--mycolor01);
+}
+.s05_text02 {
+  background-color: var(--bgcolor33);
+  border-radius: 10px;
+  color: var(--mycolor01);
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.s05_img01 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-1.jpg);
+  border-radius: 10px;
+  height: 20vh;
+}
+.s05_img02 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-2-1.jpg);
+  border-radius: 10px;
+  height: 20vh;
+}
+.s05_img03 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-3.jpg);
+  border-radius: 10px;
+  height: 20vh;
+}
+.s05_img04 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-4.jpg);
+  border-radius: 10px;
+  height: 20vh;
+}
+.s05_img05 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-13.jpg);
+  border-radius: 10px;
+  height: 20vh;
+}
+.timeline_section {
+  position: relative;
+}
+.timeline_section::before {
+  position: absolute;
+  content: "";
+  top: 18px;
+  bottom: 0px;
+  width: 3px;
+  background-color: var(--mycolor32);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline_point {
+  position: relative;
+}
+.timeline_point::before {
+  position: absolute;
+  content: "";
+  top: 23px;
+  width: 15px;
+  height: 15px;
+  border: 4px solid var(--mycolor24);
+  background-color: var(--mycolor01);
+  border-radius: 50%;
+}
+.timeline_point:hover::before {
+  background-color: var(--mycolor24);
+}
+.s07 {
+  position: relative;
+}
+.s07_img {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-12.jpg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.s09 {
+  position: relative;
+}
+.s09_img {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-13.jpg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.s10 {
+  background-color: var(--bgcolor40);
+}
+.s10_text_area {
+  border: 10px solid var(--bgcolor40);
+}
+.s10_text_areaIn {
+  padding-right: 10px;
+}
+.s10_text_text01,
+.s10_text_text02 {
+  height: 10vh;
+}
+.s10_img01 {
+  background-image: url(/spa_cat/img/animal/cat/cat-l-3.jpg);
+  height: 20vh;
+}
+.s10_img02 {
+  background-image: url(/spa_cat/img/animal/cat/cat-l-15.jpg);
+  height: 20vh;
+}
+.s10_img03 {
+  background-image: url(/spa_cat/img/animal/cat/cat-l-16.jpg);
+  height: 20vh;
+}
+.s10_img04 {
+  background-image: url(/spa_cat/img/animal/cat/cat-l-14.jpg);
+  height: 20vh;
+}
+.s11_img01 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-15-1.jpg);
+}
+.s11_img02 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-16.jpg);
+}
+.s11_text {
+  margin-top: 125px;
+}
+.s11_text p {
+  font-size: 20px;
+}
+.s11_icon:hover {
+  color: white;
+}
+.s13_box01 {
+  height: 25vh;
+  width: 25vh;
+  max-width: 100%;
+  background-image: url(/spa_cat/img/human/human-1.jpg);
+  border-radius: 50%;
+}
+.s13_box02 {
+  height: 25vh;
+  width: 25vh;
+  max-width: 100%;
+  background-image: url(/spa_cat/img/human/human-2.jpg);
+  border-radius: 50%;
+}
+.s13_box03 {
+  height: 25vh;
+  width: 25vh;
+  max-width: 100%;
+  background-image: url(/spa_cat/img/human/human-3.jpg);
+  border-radius: 50%;
+}
+.s13_box04 {
+  height: 25vh;
+  width: 25vh;
+  max-width: 100%;
+  background-image: url(/spa_cat/img/human/human-4.jpg);
+  border-radius: 50%;
+}
+.s13_text01 {
+  font-size: 20px;
+}
+.s13_text02 {
+  border-top: 4px solid var(--mycolor14);
+  width: 120px;
+}
+.s13 i {
+  font-size: 20px;
+}
+.s14_img01 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-14-1.jpg);
+}
+.s14_img02 {
+  background-image: url(/spa_cat/img/animal/cat/cat-w-17.jpg);
+}
+.s14_text_area {
+  background-color: var(--mycolor19);
+}
+@media screen and (max-width: 768px) {
+  .s01 {
+    background-color: var(--mycolor38);
+  }
+  .s02_navbar {
+    background-color: var(--mycolor37) !important;
+  }
+  #memberlist_btn,
+  #login_btn,
+  #reg_btn,
+  #member_btn,
+  #logout_btn {
+    margin-left: 0 !important;
+    margin-top: 6px;
+  }
+  .s02_navbar .fa-paw,
+  .s02_navbar .nav-link {
+    color: var(--mycolor00);
+  }
+  .s03_img01 {
+    background-image: url(/spa_cat/img/animal/cat/cat-w-6-l.jpg) !important;
+  }
+  .s04_linear-gradient {
+    background-image: url(/spa_cat/img/animal/cat/cat-bg-1.jpg);
+  }
+  .s04_text_area h1 {
+    margin-top: 10px;
+  }
+  .s04_text_area .text_p {
+    text-align: start;
+  }
+  .s05 {
+    background-image: linear-gradient(
+        180deg,
+        var(--bgcolor33),
+        var(--bgcolor36)
+      ),
+      url(/spa_cat/img/animal/cat/cat-l-17.jpg);
+    background-attachment: fixed;
+  }
+  .timeline_section::before {
+    display: none;
+  }
+  .timeline_point::before {
+    display: none;
+  }
+  .s05_content {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .s05_text01 {
+    margin-top: 20px;
+    width: 85%;
+  }
+  .s05_text02 {
+    margin-top: 10px;
+  }
+  .s07_text,
+  .s09_text {
+    z-index: 10;
+    background-color: var(--bgcolor33);
+    color: var(--mycolor01);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--mycolor19);
+    padding: 10px;
+  }
+  .s07_text h2,
+  .s09_text h2 {
+    margin-top: 15px;
+  }
+  .s07,
+  .s09 {
+    padding: 10px;
+  }
+  .s07_img,
+  .s09_img {
+    left: 0;
+    right: 0;
+  }
+  .s08_text h2 {
+    margin-top: 15px;
+  }
+  .s10_text_text01,
+  .s10_text_text02 {
+    height: 5vh;
+  }
+  .s10_img01 {
+    background-image: url(/spa_cat/img/animal/cat/cat-l-3-w.jpg);
+  }
+  .s10_img03 {
+    background-image: url(/spa_cat/img/animal/cat/cat-l-16-w.jpg);
+  }
+  .s10_img04 {
+    background-image: url(/spa_cat/img/animal/cat/cat-l-14-w.jpg);
+  }
+  .s11_text {
+    background-color: var(--bgcolor33);
+    color: var(--mycolor01);
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--mycolor19);
+    width: 50%;
+    padding: 10px;
+  }
+  .s11_text .btn {
+    color: var(--mycolor01);
+    border-color: var(--mycolor01);
+  }
+
+  .s13_box03 {
+    margin-top: 20px;
+  }
+
+  .s13_box04 {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .s13_box01 {
+    max-height: 50%;
+  }
+  .s13_box02 {
+    max-height: 50%;
+  }
+  .s13_box03 {
+    max-height: 50%;
+  }
+  .s13_box04 {
+    max-height: 50%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .s13_box02 {
+    margin-top: 20px;
+  }
+}
