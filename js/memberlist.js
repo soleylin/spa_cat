@@ -152,7 +152,7 @@ function drawTable(page) {
   if (page == 0) {
     $("#pre").addClass("disabled");
     $("#next").removeClass("disabled");
-  } else if (page + 1 == lastpage) {
+  } else if (page - 1 == lastpage) {
     $("#pre").removeClass("disabled");
     $("#next").addClass("disabled");
   } else {
