@@ -10,12 +10,12 @@ $(function () {
     dataJSON["uid01"] = getCookie("uid");
     $.ajax({
       type: "POST",
-      url: "./api/member-Check_uid-api.php",
+      url: "https://soleystudio.000webhostapp.com/spa_cat-api/member-Check_uid-api.php",
       data: JSON.stringify(dataJSON),
       dataType: "json",
       success: showdata_loginUid,
       error: function () {
-        alert("error-./api/member-Check_uid-api.php");
+        alert("error-https://soleystudio.000webhostapp.com/spa_cat-api/member-Check_uid-api.php");
       },
     });
   }
