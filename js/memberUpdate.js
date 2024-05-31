@@ -4,7 +4,6 @@ var flag_email = true;
 $(function () {
   //監聽 #member_email
   $("#member_email").bind("input propertychange", function () {
-    console.log($(this).val().length);
     //輸入字數
     if ($(this).val().length > 9 && $(this).val().length < 20) {
       //符合規定
@@ -21,12 +20,10 @@ $(function () {
 
   //監聽 #member_update_btn
   $("#member_update_btn").click(function () {
-    console.log("member_update_btn_ok");
     if (flag_email) {
       var dataJSON = {};
       dataJSON["id"] = u_id;
       dataJSON["email"] = $("#member_email").val();
-      console.log(JSON.stringify(dataJSON));
 
       $.ajax({
         type: "POST",
@@ -55,7 +52,6 @@ function showdata_member_update(data) {
       confirmButtonText: "確定",
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log("memberUpdate_ok");
         location.href = "https://soleylin.github.io/spa_cat";
       }
     });

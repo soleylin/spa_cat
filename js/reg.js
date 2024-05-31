@@ -7,7 +7,6 @@ var flag_agree = false; //會員條款同意
 $(function () {
   //監聽reg_btn
   $("#reg_btn").click(function () {
-    console.log("reg_btn");
     $("#reg_username").val("");
     $("#reg_pwd").val("");
     $("#reg_re_pwd").val("");
@@ -26,13 +25,11 @@ $(function () {
 
   //監聽 #reg_username
   $("#reg_username").bind("input propertychange", function () {
-    console.log($(this).val().length);
     //輸入字數
     if ($(this).val().length > 2 && $(this).val().length < 11) {
       //符合規定
       var dataJSON = {};
       dataJSON["userName"] = $("#reg_username").val();
-      console.log(JSON.stringify(dataJSON));
       flag_username = true;
 
       $.ajax({
@@ -58,7 +55,6 @@ $(function () {
 
   //監聽 #reg_pwd
   $("#reg_pwd").bind("input propertychange", function () {
-    console.log($(this).val().length);
     //輸入字數
     if ($(this).val().length > 1 && $(this).val().length < 11) {
       //符合規定
@@ -113,7 +109,6 @@ $(function () {
 
   //監聽 #reg_email
   $("#reg_email").bind("input propertychange", function () {
-    console.log($(this).val().length);
     //輸入字數
     if ($(this).val().length > 9 && $(this).val().length < 20) {
       //符合規定
@@ -139,18 +134,12 @@ $(function () {
 
   //監聽確認鈕
   $("#reg_ok_btn").click(function () {
-    console.log("flag_username " + flag_username);
-    console.log("flag_pwd " + flag_pwd);
-    console.log("flag_re_pwd " + flag_re_pwd);
-    console.log("flag_email " + flag_email);
-    console.log("flag_agree " + flag_agree);
     if (flag_username && flag_pwd && flag_re_pwd && flag_email && flag_agree) {
       var dataJSON = {};
       dataJSON["userName"] = $("#reg_username").val();
       dataJSON["password"] = $("#reg_pwd").val();
       dataJSON["email"] = $("#reg_email").val();
       dataJSON["manager"] = "N";
-      console.log(JSON.stringify(dataJSON));
 
       $.ajax({
         type: "POST",
@@ -209,14 +198,12 @@ function showdata(data) {
 function showdata_check_uni(data) {
   if (data.state) {
     //顯示帳號不存在，可以使用
-    console.log("yes");
     $("#reg_username_text01").html(data.message);
     $("#reg_username").addClass("is-valid");
     $("#reg_username").removeClass("is-invalid");
     flag_username = true;
   } else {
     //顯示帳號已存在，不可使用
-    console.log("no");
     $("#reg_username_text02").html(
       "<font color='red'>" + data.message + "</font>"
     );

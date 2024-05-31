@@ -21,11 +21,9 @@ $(function () {
   }
 
   $("#login_ok_btn").click(function () {
-    //  console.log($("#login_username").val()+$("#login_pwd").val());
     var dataJSON = {};
     dataJSON["userName"] = $("#login_username").val();
     dataJSON["password"] = $("#login_pwd").val();
-    console.log(JSON.stringify(dataJSON));
     $.ajax({
       type: "POST",
       url: "https://soleystudio.000webhostapp.com/spa_cat-api/member-Login-api.php",
@@ -40,7 +38,6 @@ $(function () {
 });
 
 function showdata_login(data) {
-  console.log(data);
   if (data.state) {
     if (data.data[0].manager == "Y") {
       alert(data.message);
@@ -158,7 +155,6 @@ function showdata_login(data) {
 function showdata_loginUid(data) {
   if (data.state) {
     if (data.data[0].manager == "Y") {
-      console.log(data.message);
       $("#loginModal").modal("hide");
       $("#user_message").text(data.data[0].userName);
       $("#login_btn").addClass("d-none");
@@ -261,8 +257,6 @@ function showdata_loginUid(data) {
       $("#s15").addClass("d-block");
       u_id = data.data[0].id;
     }
-  } else {
-    console.log(data.message);
   }
 }
 

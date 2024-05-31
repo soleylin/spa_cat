@@ -39,12 +39,8 @@ $(function () {
         denyButtonText: "取消",
       }).then((result) => {
         if (result.isConfirmed) {
-          console.log("delete_btn_ok");
-          console.log($(this).data("id"));
-
           var dataJSON = {};
           dataJSON["id"] = $(this).data("id");
-          console.log(JSON.stringify(dataJSON));
 
           $.ajax({
             type: "POST",
@@ -65,7 +61,6 @@ $(function () {
 
   $("body").on("click", "#pre", function () {
     if (nowpage > 0) {
-      console.log("pre" + nowpage);
       drawTable(nowpage - 1);
     }
   });
@@ -78,7 +73,6 @@ $(function () {
   //監聽頁碼
   $("body").on("click", ".page-item .page-link[name='page-link']", function () {
     nowpage = $(this).data("key");
-    console.log("nowpage" + nowpage);
     drawTable(nowpage);
   });
 });
@@ -87,11 +81,10 @@ function showdata(data) {
   //整理資料儲存為二維陣列
   //key: 陣列索引值
   data.data.forEach(function (item, key) {
-    console.log(key);
 
     //3筆資料為1頁
     //%: 除於某數的餘數值 (key%3 == 0 : key除以3時餘數為0)
-    if (key % 3 == 0) {
+    if (key % 10 == 0) {
       //將空陣列[]放入newData
       newData.push([]);
       lastpage++;
@@ -131,15 +124,12 @@ function showdata(data) {
   var strHTML =
     '<li class="page-item" id="next"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">Next&raquo;</span></a></li>';
   $("#pageList").append(strHTML);
-  console.log(newData);
 
   //第一頁active
   $("#page1").addClass("active");
 }
 
 function showdata_delete(data) {
-  console.log(data);
-  //data.state == true
   if (data.state) {
     Swal.fire({
       title: data.message,
@@ -177,7 +167,6 @@ function drawTable(page) {
 
   //forEach每次跑一列
   newData[page].forEach(function (item) {
-    console.log(item.userName);
     var strHTML =
       '<tr><td data-th="會員編號" class="tdc">' +
       item.id +

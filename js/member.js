@@ -2,10 +2,8 @@ import { u_id } from "./login.js";
 
 $(function () {
   $("#member_btn").click(function () {
-    console.log(u_id);
     var dataJSON = {};
     dataJSON["id"] = u_id;
-    console.log(JSON.stringify(dataJSON));
 
     $.ajax({
       type: "POST",
@@ -24,8 +22,6 @@ $(function () {
 
     //監聽 #update_btn
     $("#mybody #update_btn").click(function () {
-      console.log("update_btn");
-      console.log($(this).data("username"));
       $("#member_userName").val($(this).data("username"));
       $("#member_email").val($(this).data("email"));
       $("#member_email").removeClass("is-invalid");
@@ -34,8 +30,6 @@ $(function () {
 
     //監聽 #updatePwd_btn
     $("#mybody #updatePwd_btn").click(function () {
-      console.log("updatePwd_btn_ok");
-      console.log($(this).data("username"));
       $("#memberPwd_userName").val($(this).data("username"));
       $("#memberPwd_oldpwd").val("");
       $("#memberPwd_oldpwd").removeClass("is-invalid");
@@ -50,24 +44,19 @@ $(function () {
     });
 
     $("#member_ok_btn").click(function () {
-      console.log("member_ok_btn");
       $("#memberModal").modal("hide");
     });
 
     $("#memberPwd_ok_btn").click(function () {
-      console.log("member_ok_btn");
       $("#memberPwdModal").modal("hide");
     });
   });
 
   function showdata(data) {
-    // console.log(data.data);
-
     //刪除樣板
     $("#mybody").empty();
     //forEach每次跑一列
     data.data.forEach(function (item) {
-      console.log(item.userName);
       var strHTML =
         '<tr><td data-th="帳號" class="tdc">' +
         item.userName +

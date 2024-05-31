@@ -6,7 +6,6 @@ var flag_repwd = false;
 $(function () {
   //監聽 #memberPwd_pwd
   $("#memberPwd_pwd").bind("input propertychange", function () {
-    console.log($(this).val().length);
     //輸入字數
     if ($(this).val().length > 1 && $(this).val().length < 11) {
       //符合規定
@@ -62,7 +61,6 @@ $(function () {
 
   //監聽 #memberPwd_update_btn
   $("#memberPwd_update_btn").click(function () {
-    console.log("memberPwd_update_btn_ok");
     if ($("#memberPwd_oldpwd").val().length > 0) {
       flag_oldpwd = true;
     } else {
@@ -74,8 +72,6 @@ $(function () {
       dataJSON["id"] = u_id;
       dataJSON["password"] = $("#memberPwd_pwd").val();
       dataJSON["oldpassword"] = $("#memberPwd_oldpwd").val();
-      console.log(JSON.stringify(dataJSON));
-
       $.ajax({
         type: "POST",
         url: "https://soleystudio.000webhostapp.com/spa_cat-api/memberPwd-Update-api.php",
@@ -117,10 +113,6 @@ function showdata_memberPwd_update(data) {
       showDenyButton: false,
       showCancelButton: false,
       confirmButtonText: "確定",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        console.log("密碼錯誤");
-      }
     });
   }
 }

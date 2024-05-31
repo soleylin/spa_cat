@@ -8,7 +8,6 @@ var manager; //紀錄管理員狀態
 $(function () {
   //監聽 #update_btn
   $("body").on("click", " #mybody #update_btn", function () {
-    console.log($(this).data("manager"));
     u_id = $(this).data("id");
     $("#modal_username").val($(this).data("username"));
     $("#manager").val($(this).data("manager"));
@@ -31,7 +30,6 @@ $(function () {
     dataJSON["id"] = u_id;
     dataJSON["userName"] = $("#modal_username").val();
     dataJSON["manager"] = manager;
-    console.log(JSON.stringify(dataJSON));
 
     $.ajax({
       type: "POST",
@@ -49,7 +47,6 @@ $(function () {
 
   $("#manager").change(function () {
     //is(':checked'): 判斷是否為checked, 結果為布林值
-    console.log($(this).is(":checked"));
     if ($(this).is(":checked")) {
       //next():下一個標籤.以text型態
       $(this).next().text("管理者");
