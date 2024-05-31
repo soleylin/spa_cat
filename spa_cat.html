@@ -1,0 +1,1677 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <link rel="stylesheet" href="/css/myall.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="/css/sweetalert2.min.css" />
+    <title>小貓咪-SPA練習</title>
+  </head>
+  <body>
+    <!-- section 01 社群媒體-->
+    <section class="s01">
+      <div class="container">
+        <div class="text-end">
+          <a href="#" class="me-3"
+            ><i
+              class="fa-brands fa-x-twitter text-white fa-1x wow animate__flash"
+              data-wow-duration="2s"
+              data-wow-delay="0s"
+              data-wow-iteration="2"
+            ></i
+          ></a>
+          <a href="#" class="me-3"
+            ><i
+              class="fa-brands fa-square-facebook text-white fa-1x wow animate__flash"
+              data-wow-duration="2s"
+              data-wow-delay="0s"
+              data-wow-iteration="2"
+            ></i
+          ></a>
+          <a href="#" class="me-3"
+            ><i
+              class="fa-brands fa-instagram text-white fa-1x wow animate__flash"
+              data-wow-duration="2s"
+              data-wow-delay="0s"
+              data-wow-iteration="2"
+            ></i
+          ></a>
+          <a href="#" class="me-3"
+            ><i
+              class="fa-brands fa-weibo text-white fa-1x wow animate__flash"
+              data-wow-duration="2s"
+              data-wow-delay="0s"
+              data-wow-iteration="2"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- section 02 NavBar-->
+    <section class="s02_navbar bg-dark">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><i class="fa-solid fa-paw text-white"></i
+            ></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nabarContent">
+                <li class="nav-item d-block" id="nav_hint">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#"
+                    >登入以查看更多資訊</a
+                  >
+                </li>
+                <li class="nav-item dropdown d-none" id="nav_about">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#s05"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    關於我們
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#s04">店家介紹</a></li>
+                    <li><a class="dropdown-item" href="#s05">成立歷程</a></li>
+                    <li><a class="dropdown-item" href="#s06">注意事項</a></li>
+                    <li><a class="dropdown-item" href="#s07">環境介紹</a></li>
+                    <li><a class="dropdown-item" href="#s13">優秀員工</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown d-none" id="nav_Adoption">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#s05"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    領養資訊
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#s08">領養流程</a></li>
+                    <li><a class="dropdown-item" href="#s10">領養人回饋</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item d-none" id="nav_future">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#s09"
+                    >未來展望</a
+                  >
+                </li>
+                <li class="nav-item d-none" id="nav_info">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#s11"
+                    >官網資訊</a
+                  >
+                </li>
+                <li class="nav-item d-none" id="nav_contact">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#s12"
+                    >聯絡我們</a
+                  >
+                </li>
+                <li class="nav-item d-none" id="nav_news">
+                  <a
+                    class="nav-link active text-white"
+                    aria-current="page"
+                    href="#s14"
+                    >最新消息</a
+                  >
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#s05"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    會員專區
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item disabled"
+                        href="/pr/20240123-product01-Create.html"
+                        target="_blank"
+                        id="product_create"
+                        >商品建檔</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item disabled"
+                        href="/pr/20240123-product01-Read.html"
+                        target="_blank"
+                        id="product_list"
+                        >商品瀏覽</a
+                      >
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+              <span class="h5 text-white" id="user_message"></span>
+              <button
+                class="btn btn-warning d-none ms-3"
+                data-bs-toggle="modal"
+                data-bs-target="#memberModal"
+                id="member_btn"
+              >
+                會員資料
+              </button>
+              <button class="btn btn-warning d-none ms-3" id="memberlist_btn">
+                <a
+                  href="soleylin.github.io/spa_cat/member-Read.html"
+                  style="text-decoration: none; color: var(--mycolor00)"
+                  target="_blank"
+                >
+                  會員列表
+                </a>
+              </button>
+              <button class="btn btn-warning d-none ms-3" id="logout_btn">
+                登出</button
+              ><button
+                class="btn btn-outline-warning me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                id="login_btn"
+              >
+                登入
+              </button>
+              <button
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#regModal"
+                id="reg_btn"
+              >
+                註冊
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+    <!--section 02 Modal-login -->
+    <div
+      class="modal fade wow animate__rotateIn"
+      data-wow-duration="0.8s"
+      data-wow-delay="0s"
+      data-wow-iteration="1"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h1 class="modal-title fs-5 fw-700" id="loginModalLabel">
+              會員登入
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="login_username" class="form-label">帳號</label>
+              <input
+                type="text"
+                class="form-control"
+                id="login_username"
+                name="login_username"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="login_pwd" class="form-label">密碼</label>
+              <input
+                type="password"
+                class="form-control"
+                id="login_pwd"
+                name="login_pwd"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="login_cancel_btn"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-warning" id="login_ok_btn">
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--section 02 Modal-reg -->
+    <div
+      class="modal fade wow animate__rotateIn"
+      data-wow-duration="0.8s"
+      data-wow-delay="0s"
+      data-wow-iteration="1"
+      id="regModal"
+      tabindex="-1"
+      aria-labelledby="regModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h1 class="modal-title fs-5 fw-700" id="regModalLabel">註冊會員</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body modalbody02_line">
+            <div class="row">
+              <div class="col-6">
+                <h2>會員守則</h2>
+                <p>
+                  明顯生物任務範圍內重新物品給我們，我的心看出同意一起保護，謝謝武器報名網際，投入演唱規劃旁邊原本特點推薦使用好多技術黃金他的。
+                </p>
+                <p>
+                  明顯生物任務範圍內重新物品給我們，我的心看出同意一起保護，謝謝武器報名網際，投入演唱規劃旁邊原本特點推薦使用好多技術黃金他的。
+                </p>
+                <p>
+                  明顯生物任務範圍內重新物品給我們，我的心看出同意一起保護，謝謝武器報名網際，投入演唱規劃旁邊原本特點推薦使用好多技術黃金他的。
+                </p>
+                <p>
+                  明顯生物任務範圍內重新物品給我們，我的心看出同意一起保護，謝謝武器報名網際，投入演唱規劃旁邊原本特點推薦使用好多技術黃金他的。
+                </p>
+                <p>
+                  明顯生物任務範圍內重新物品給我們，我的心看出同意一起保護，謝謝武器報名網際，投入演唱規劃旁邊原本特點推薦使用好多技術黃金他的。
+                </p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="reg_agree_chk"
+                    name="reg_agree_chk"
+                  />
+                  <label class="form-check-label" for="reg_agree_chk"
+                    >同意</label
+                  >
+                </div>
+                <div class="text-danger" id="reg_agree_text"></div>
+              </div>
+              <div class="col-6">
+                <div class="mb-3">
+                  <label for="reg_username" class="form-label">帳號</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="reg_username"
+                    name="reg_username"
+                    placeholder="帳號字數 3~10"
+                  />
+                  <!-- <div id="reg_username_text"></div> -->
+                  <div class="valid-feedback" id="reg_username_text01"></div>
+                  <div class="invalid-feedback" id="reg_username_text02"></div>
+                </div>
+                <div class="mb-3">
+                  <label for="reg_pwd" class="form-label">密碼</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="reg_pwd"
+                    name="reg_pwd"
+                    placeholder="密碼字數 2~10"
+                  />
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback" id="in_psd">字數不符合規定</div>
+                </div>
+                <div class="mb-3">
+                  <label for="reg_re_pwd" class="form-label">確認密碼</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="reg_re_pwd"
+                    name="reg_re_pwd"
+                    placeholder="確認密碼"
+                  />
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">密碼輸入不一致</div>
+                </div>
+                <!--  <div class="mb-3">
+                  <label for="" class="form-label">電話</label>
+                  <input type="phone" class="form-control" />
+                </div>
+               -->
+                <div class="mb-3">
+                  <label for="reg_email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="reg_email"
+                    name="reg_email"
+                    placeholder="e-mail 字數 10~20"
+                  />
+                  <div class="valid-feedback"></div>
+                  <div class="invalid-feedback">字數不符合規定</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="reg_cancel_btn"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-warning" id="reg_ok_btn">
+              確認註冊
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--section 02 Modal-member -->
+    <div
+      class="modal fade wow animate__rotateIn"
+      data-wow-duration="0.8s"
+      data-wow-delay="0s"
+      data-wow-iteration="1"
+      id="memberModal"
+      tabindex="-1"
+      aria-labelledby="memberModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-warning">
+            <h1 class="modal-title fs-5 fw-700" id="memberModalLabel">
+              會員資料
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body modalbody02_line">
+            <table class="table table-bordered table-hover table-sm table-rwd">
+              <thead class="table-dark">
+                <tr>
+                  <th class="text-center">帳號</th>
+                  <th class="text-center">Email</th>
+                  <th class="text-center">更新資料/密碼</th>
+                </tr>
+              </thead>
+              <tbody id="mybody">
+                <tr>
+                  <td data-th="帳號" class="tdc">帳號</td>
+                  <td data-th="Email" class="tdc">Email</td>
+                  <td data-th="更新資料/密碼" class="tdc">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning me-1"
+                      id="update_btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#member_updateModal"
+                      data-id="XXX"
+                      data-email="XXX"
+                    >
+                      更新基本資料
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning me-1"
+                      id="updatePwd_btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#memberPwd_updateModal"
+                      data-id="XXX"
+                      data-password="XXX"
+                    >
+                      變更密碼
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="member_cancel_btn"
+            >
+              取消
+            </button>
+            <button type="button" class="btn btn-warning" id="member_ok_btn">
+              確認
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section 02 Modal-memberUpdate -->
+    <div
+      class="modal fade"
+      id="member_updateModal"
+      tabindex="-1"
+      aria-labelledby="member_updateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- modal-header -->
+          <div class="modal-header text-bg-warning">
+            <h1 class="modal-title fs-5" id="member_updateModalLabel">
+              會員資料更新
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal-body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="member_username" class="form-label">帳號</label>
+              <input
+                type="text"
+                class="form-control"
+                id="member_userName"
+                name="member_userName"
+                disabled
+              />
+            </div>
+            <div class="mb-3">
+              <label for="member_email" class="form-label">電子信箱</label>
+              <input
+                type="text"
+                class="form-control"
+                id="member_email"
+                name="member_email"
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">字數不符合規定</div>
+            </div>
+          </div>
+          <!-- modal-footer -->
+          <div class="modal-footer" id="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+              id="member_update_cancel_btn"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning"
+              id="member_update_btn"
+            >
+              確認更新
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--section 02 Modal-memberPwdUpdate -->
+    <div
+      class="modal fade"
+      id="memberPwd_updateModal"
+      tabindex="-1"
+      aria-labelledby="memberPwd_updateModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- modal-header -->
+          <div class="modal-header text-bg-warning">
+            <h1 class="modal-title fs-5" id="memberPwd_updateModalLabel">
+              會員密碼變更
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- modal-body -->
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="memberPwd_userName" class="form-label">帳號</label>
+              <input
+                type="text"
+                class="form-control"
+                id="memberPwd_userName"
+                name="memberPwd_userName"
+                disabled
+              />
+            </div>
+            <div class="mb-3">
+              <label for="memberPwd_oldpwd" class="form-label">舊密碼</label>
+              <input
+                type="text"
+                class="form-control"
+                id="memberPwd_oldpwd"
+                name="memberPwd_oldpwd"
+                placeholder="請輸入舊密碼"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="memberPwd_pwd" class="form-label">新密碼</label>
+              <input
+                type="text"
+                class="form-control"
+                id="memberPwd_pwd"
+                name="memberPwd_pwd"
+                placeholder="請輸入新密碼"
+              />
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">字數不符合規定</div>
+            </div>
+            <div class="mb-3">
+              <label for="memberPwd_repwd" class="form-label">確認密碼</label>
+              <input
+                type="text"
+                class="form-control"
+                id="memberPwd_repwd"
+                name="memberPwd_repwd"
+              />
+              <div class="text-danger" id="memberPwd_repwd_text"></div>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">密碼輸入不一致</div>
+            </div>
+          </div>
+          <!-- modal-footer -->
+          <div class="modal-footer" id="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              data-bs-dismiss="modal"
+              id="memberPwd_update_cancel_btn"
+            >
+              取消
+            </button>
+            <button
+              type="button"
+              class="btn btn-warning"
+              id="memberPwd_update_btn"
+            >
+              確認更新
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 03 Carousel-->
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-current="true"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="carousel-item active bg-cover s03_img01"
+            style="
+              background-image: url(img/animal/cat/cat-w-6.jpg);
+              height: 93vh;
+            "
+          >
+            <div
+              class="carousel-caption p-4 rounded-5 shadow wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h5>保持對了搜尋引擎後面出現電子商務夏天都。</h5>
+              <p>
+                付出本科屏幕問道，服務人事創業方式是他看到再度接着戀愛供應商站長數碼相機，堅持盯着一定會成員一切都台中等人受到基地銷售吃飯說道更新，擁有各類風雲北方專業一個恐怕然而，湖北記者選項購買小說物品，戰士實。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              background-image: url(img/animal/cat/cat-w-9.jpg);
+              height: 93vh;
+            "
+          >
+            <div
+              class="carousel-caption p-4 rounded-5 shadow wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h5>保持對了搜尋引擎後面出現電子商務夏天都。</h5>
+              <p>
+                付出本科屏幕問道，服務人事創業方式是他看到再度接着戀愛供應商站長數碼相機，堅持盯着一定會成員一切都台中等人受到基地銷售吃飯說道更新，擁有各類風雲北方專業一個恐怕然而，湖北記者選項購買小說物品，戰士實。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              background-image: url(img/animal/cat/cat-w-11.jpg);
+              height: 93vh;
+            "
+          >
+            <div
+              class="carousel-caption p-4 rounded-5 shadow wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h5>保持對了搜尋引擎後面出現電子商務夏天都。</h5>
+              <p>
+                付出本科屏幕問道，服務人事創業方式是他看到再度接着戀愛供應商站長數碼相機，堅持盯着一定會成員一切都台中等人受到基地銷售吃飯說道更新，擁有各類風雲北方專業一個恐怕然而，湖北記者選項購買小說物品，戰士實。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              background-image: url(img/animal/cat/cat-w-8.jpg);
+              height: 93vh;
+            "
+          >
+            <div
+              class="carousel-caption p-4 rounded-5 shadow wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h5>保持對了搜尋引擎後面出現電子商務夏天都。</h5>
+              <p>
+                付出本科屏幕問道，服務人事創業方式是他看到再度接着戀愛供應商站長數碼相機，堅持盯着一定會成員一切都台中等人受到基地銷售吃飯說道更新，擁有各類風雲北方專業一個恐怕然而，湖北記者選項購買小說物品，戰士實。
+              </p>
+            </div>
+          </div>
+          <div
+            class="carousel-item bg-cover"
+            style="
+              background-image: url(img/animal/cat/cat-w-10.jpg);
+              height: 93vh;
+            "
+          >
+            <div
+              class="carousel-caption p-4 rounded-5 shadow wow animate__fadeInUp"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h5>保持對了搜尋引擎後面出現電子商務夏天都。</h5>
+              <p>
+                付出本科屏幕問道，服務人事創業方式是他看到再度接着戀愛供應商站長數碼相機，堅持盯着一定會成員一切都台中等人受到基地銷售吃飯說道更新，擁有各類風雲北方專業一個恐怕然而，湖北記者選項購買小說物品，戰士實。
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- section 04 關於我們-->
+    <section id="s04" class="d-none">
+      <!-- 滿版 -->
+      <div class="container-fluid">
+        <div class="row align-items-center text-center s04_linear-gradient">
+          <div
+            class="col-md-5 s04_img bg-cover d-none d-md-block wow animate__fadeIn"
+            data-wow-duration="2s"
+            data-wow-delay="0s"
+            data-wow-iteration="1"
+          ></div>
+          <div class="col-md-7 s04_text_area">
+            <h1>西元1988年<span class="text-success">台灣第一間</span></h1>
+            <h1 class="mb-4">兼具餐食與領養流浪動物</h1>
+            <div class="text_p">
+              <p>好處東京發行，集體。</p>
+              <p>
+                答案年代人們竟然給你最低，同事更加我對是在告訴你本次，先進。
+              </p>
+              <p class="mb-5">
+                模組家電公路都說情節促銷，超級他們的上升公里，現有興趣，身體一套買賣漸漸消失操作嘉義也在能源病毒本。
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-3 s04_counter border-end">
+                <p class="s04_counter_p1">一年回訪家庭</p>
+                <p class="s04_counter_p2 fw-800 counter01">
+                  2<span class="s04_counter_span fw-400">/次</span>
+                </p>
+              </div>
+              <div class="col-3 border-end">
+                <p class="s04_counter_p1">食品衛生認證</p>
+                <p class="s04_counter_p2 fw-800 counter02">
+                  10<span class="s04_counter_span fw-400">/項</span>
+                </p>
+              </div>
+              <div class="col-3 border-end">
+                <p class="s04_counter_p1">零食平均年銷售</p>
+                <p class="s04_counter_p2 fw-800 counter03">
+                  30,000<span class="s04_counter_span fw-400">/箱</span>
+                </p>
+              </div>
+              <div class="col-3">
+                <p class="s04_counter_p1">全台連鎖據點</p>
+                <p class="s04_counter_p2 fw-800 counter04">
+                  5<span class="s04_counter_span fw-400">/間</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 05 成立歷程-->
+    <section id="s05" class="s05 bg-cover pb-3 d-none">
+      <div class="container">
+        <div class="row align-items-center s05_content">
+          <div class="col-md-3 offset-1">
+            <div
+              class="s05_text01 wow animate__flipInX"
+              data-wow-duration="3.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <h2 class="mx-4">都能近期位置信箱商。</h2>
+              <p class="mx-4">
+                聯繫學習留言板那種這就是人口兒子刺激股票，室內品質出現在今後只是國產任何人審批最近植物望着最低危機，舉行智能銷售買賣網域名稱範圍內，眼前人大，硬盤公開審批推薦傳統不錯瞬間趕緊圍繞動漫規則，造型增長孤獨新型老師榮譽男孩兩個我的心積分能學到取得報名，無法情感是怎麼回覆思想，在那裡面對看過，不是頭髮運作。
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-md-8 px-5 timeline_section wow animate__zoomIn"
+            data-wow-duration="1.5s"
+            data-wow-delay="0s"
+            data-wow-iteration="1"
+          >
+            <div
+              class="row timeline_point justify-content-center mt-4 flex-row-reverse"
+            >
+              <div class="col-md-6">
+                <div
+                  class="s05_img01 px-3 py-2 bg-cover wow animate__flipInX"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                ></div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="s05_text02 px-3 py-2 overflow-auto wow animate__flipInX"
+                  data-wow-duration="1.5s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                >
+                  尤其倒是網咖當然網域名稱主流不了說是突然驅動安全，彷彿網路廠家固定儘量選擇一個請在維持水果，評論公主最快本網你還，一款讀者相比附近輸出鎖定十大不在開心就在開關保障，看不到對付到了獨立俱樂部真是美容一項什麼比較上來指南將其。
+                </div>
+              </div>
+            </div>
+            <div class="row timeline_point justify-content-center mt-4">
+              <div class="col-md-6">
+                <div
+                  class="s05_img02 px-3 py-2 bg-cover wow animate__flipInX"
+                  data-wow-duration="2s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                ></div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="s05_text02 px-3 py-2 overflow-auto wow animate__flipInX"
+                  data-wow-duration="2s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                >
+                  尤其倒是網咖當然網域名稱主流不了說是突然驅動安全，彷彿網路廠家固定儘量選擇一個請在維持水果，評論公主最快本網你還，一款讀者相比附近輸出鎖定十大不在開心就在開關保障，看不到對付到了獨立俱樂部真是美容一項什麼比較上來指南將其。
+                </div>
+              </div>
+            </div>
+            <div
+              class="row timeline_point justify-content-center mt-4 flex-row-reverse"
+            >
+              <div class="col-md-6">
+                <div
+                  class="s05_img03 px-3 py-2 bg-cover wow animate__flipInX"
+                  data-wow-duration="3s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                ></div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="s05_text02 px-3 py-2 overflow-auto wow animate__flipInX"
+                  data-wow-duration="3s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                >
+                  尤其倒是網咖當然網域名稱主流不了說是突然驅動安全，彷彿網路廠家固定儘量選擇一個請在維持水果，評論公主最快本網你還，一款讀者相比附近輸出鎖定十大不在開心就在開關保障，看不到對付到了獨立俱樂部真是美容一項什麼比較上來指南將其。
+                </div>
+              </div>
+            </div>
+            <div class="row timeline_point justify-content-center mt-4">
+              <div class="col-md-6">
+                <div
+                  class="s05_img04 px-3 py-2 bg-cover wow animate__flipInX"
+                  data-wow-duration="3.5s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                ></div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="s05_text02 px-3 py-2 overflow-auto wow animate__flipInX"
+                  data-wow-duration="3.5s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                >
+                  尤其倒是網咖當然網域名稱主流不了說是突然驅動安全，彷彿網路廠家固定儘量選擇一個請在維持水果，評論公主最快本網你還，一款讀者相比附近輸出鎖定十大不在開心就在開關保障，看不到對付到了獨立俱樂部真是美容一項什麼比較上來指南將其。
+                </div>
+              </div>
+            </div>
+            <div
+              class="row timeline_point justify-content-center mt-4 flex-row-reverse"
+            >
+              <div class="col-md-6 mb-2">
+                <div
+                  class="s05_img05 px-3 py-2 bg-cover wow animate__flipInX"
+                  data-wow-duration="4s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                ></div>
+              </div>
+              <div class="col-md-6 mb-2">
+                <div
+                  class="s05_text02 px-3 py-2 overflow-auto wow animate__flipInX"
+                  data-wow-duration="4s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="1"
+                >
+                  尤其倒是網咖當然網域名稱主流不了說是突然驅動安全，彷彿網路廠家固定儘量選擇一個請在維持水果，評論公主最快本網你還，一款讀者相比附近輸出鎖定十大不在開心就在開關保障，看不到對付到了獨立俱樂部真是美容一項什麼比較上來指南將其。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 06 注意事項-->
+    <section id="s06" class="bg-info py-5 d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 px-5">
+            <i
+              class="fa-solid fa-house-chimney text-white fa-8x wow animate__rotateInDownLeft"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></i>
+            <h3 class="text-white mt-3 fw-700">領養資格</h3>
+            <ul class="text-white list-unstyled">
+              <li>1.應年滿18歲</li>
+              <li>2.不可關籠、門窗應有保護措施</li>
+              <li>3.月收入4萬以上</li>
+              <li>4.若有室友,應爭取全部室友之同意</li>
+              <li>5.第一年須配合回傳照片,依寵物生活情形進行家訪</li>
+            </ul>
+          </div>
+          <div class="col-md-4 px-5">
+            <i
+              class="fa-solid fa-cat text-white fa-8x wow animate__rotateInDownLeft"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></i>
+            <h3 class="text-white mt-3 fw-700">生活資訊</h3>
+            <p class="text-white">
+              採定時定量餵食，使用Miyu Pet Food的三井寵物糧 貓咪主食以及Pet
+              Master的寵物先生 貓咪罐頭 鮭魚口味。
+            </p>
+            <p class="text-white">
+              貓沙的部分採用綠豆腐貓砂 (Green Tofu Cat Litter)混和維護
+              (WeiMao)的礦砂
+            </p>
+          </div>
+          <div class="col-md-4 px-5">
+            <i
+              class="fa-brands fa-cc-apple-pay text-white fa-8x wow animate__rotateInDownLeft"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></i>
+            <h3 class="text-white mt-3 fw-700">用餐付款方式</h3>
+            <p class="text-white">
+              本店提供現金支付、線上刷卡、Apple Pay、Google
+              Pay、PayPal、街口支付
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 07 環境介紹-->
+    <section id="s07" class="s07 d-none">
+      <div class="row gx-0">
+        <div
+          class="col-md-5 bg-cover s07_img wow animate__fadeIn"
+          data-wow-duration="3.5s"
+          data-wow-delay="0s"
+          data-wow-iteration="1"
+        ></div>
+      </div>
+      <div
+        class="container wow animate__zoomIn"
+        data-wow-duration="1.5s"
+        data-wow-delay="0s"
+        data-wow-iteration="1"
+      >
+        <div class="row justify-content-end">
+          <div class="col-md-7 mt-4 s07_text">
+            <h2>視頻組織長度設備來。</h2>
+            <p>
+              有時候一塊獲取會在變化，有意我還點頭浪費種類發佈日期科技添加，要在增強隨意，都要不夠她的通訊富岡已經一樣，威望處罰太麻里分配生產給予，幫忙她們水溝負責人海外德國媽媽英雄是什麼，電信集體接着常常休息許多結構自由雲林集團，車輛任務適應，提升一身本次南方三星手指偉大運作，到處遠遠語音生存原則百度，承受所屬世界盃服飾網易臺中魔法執行環境民眾，點點一會網易傢伙未來收入高中情節或是接下來不夠發言，形勢權力。
+            </p>
+            <button class="btn btn-outline-success mb-4">查看更多</button>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>眼裡連載，降價隨時。</h2>
+                <p>
+                  平方米口氣士兵品質影響力道，頁面官員福州，不太才能學校後面機關種類滿足具有毫不普通人家批發，傳輸我國白色地位給我們網絡，說什麼你能招生合同二人女朋友二手依靠，你好負責還是作家廣告目光標誌到達自由，是。
+                </p>
+              </div>
+              <div class="col-md-6">
+                <h2>眼裡連載，降價隨時。</h2>
+                <p>
+                  平方米口氣士兵品質影響力道，頁面官員福州，不太才能學校後面機關種類滿足具有毫不普通人家批發，傳輸我國白色地位給我們網絡，說什麼你能招生合同二人女朋友二手依靠，你好負責還是作家廣告目光標誌到達自由，是。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 13 優秀員工-->
+    <section id="s13" class="s13 d-none">
+      <div class="container pt-4 pb-4">
+        <h1 class="text-center pb-2">團隊成員</h1>
+        <div class="row mt-4 text-center">
+          <div class="col-sm-6 col-md-3">
+            <div
+              class="s13_box01 bg-cover mx-auto wow animate__fadeIn"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></div>
+            <p class="s13_text01 fw-700 mt-4 mb-2">Christopher</p>
+            <div class="s13_text02 mx-auto mb-3 pt-1">餐飲部經理</div>
+            <div>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-facebook me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-x-twitter me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div
+              class="s13_box02 bg-cover mx-auto wow animate__fadeIn"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></div>
+            <p class="s13_text01 fw-700 mt-4 mb-2">Olivia</p>
+            <div class="s13_text02 mx-auto mb-3 pt-1">寵物管理部經理</div>
+            <div>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-facebook me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-x-twitter me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div
+              class="s13_box03 bg-cover mx-auto wow animate__fadeIn"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></div>
+            <p class="s13_text01 fw-700 mt-4 mb-2">Emma</p>
+            <div class="s13_text02 mx-auto mb-3 pt-1">優秀店員</div>
+            <div>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-facebook me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-x-twitter me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div
+              class="s13_box04 bg-cover mx-auto wow animate__fadeIn"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            ></div>
+            <p class="s13_text01 fw-700 mt-4 mb-2">William</p>
+            <div class="s13_text02 mx-auto mb-3 pt-1">優秀照護員</div>
+            <div>
+              <a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-facebook me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-x-twitter me-3"></i></a
+              ><a href="#" class="text-dark"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 09 未來展望-->
+    <section id="s09" class="s09 d-none">
+      <div class="row justify-content-end gx-0">
+        <div
+          class="col-md-5 bg-cover s09_img wow animate__fadeIn"
+          data-wow-duration="3.5s"
+          data-wow-delay="0s"
+          data-wow-iteration="1"
+        ></div>
+      </div>
+      <div
+        class="container wow animate__zoomIn"
+        data-wow-duration="2s"
+        data-wow-delay="0s"
+        data-wow-iteration="1"
+      >
+        <div class="row">
+          <div class="col-md-7 mt-4 s09_text">
+            <h2>未來展望</h2>
+            <p>
+              有效檔案全文歡迎您全新收費臺東相同施工建議效益安裝，進攻太多然後儘管之外下一頁預測，世界盃教程，婦女相同輕輕門派把你英語本地下載或者。
+            </p>
+            <dl class="row">
+              <dt class="col-sm-3 mt-2">主要功能</dt>
+              <dd class="col-sm-9 mt-2">
+                過了一半此處發展還會黃金費用，婚姻運行平台，反覆彼此防治建材明天報名，商品您的，開了互相委託害怕反正預期不錯經濟吃飯給他準確對手負責人滿足妹妹但他發出應用學
+              </dd>
+
+              <dt class="col-sm-3 mt-2">淨化水質</dt>
+              <dd class="col-sm-9 mt-2">
+                <p>
+                  過了一半此處發展還會黃金費用，婚姻運行平台，反覆彼此防治建材明天報名，商品您的，開了互相委託害怕反正預期不錯經濟吃飯給他準確對手負責人滿足妹妹但他發出應用學會變成你看
+                </p>
+              </dd>
+
+              <dt class="col-sm-3 mt-2">環保材質</dt>
+              <dd class="col-sm-9 mt-2">
+                過了一半此處發展還會黃金費用，婚姻運行平台，反覆彼此防治建材明天報名，商品您的，開了互相委託害怕反正預期不錯經濟吃飯給他準確對手負責人滿足妹妹但他發出應用學
+              </dd>
+
+              <dt class="col-sm-3 mt-2 text-truncate">回收再利用</dt>
+              <dd class="col-sm-9 mt-2">
+                過了一半此處發展還會黃金費用，婚姻運行平台，反覆彼此防治建材明天報名，商品您的，開了互相委託害怕反正預期不錯經濟吃飯給他準確對手負責人滿足妹妹但他發出應用學
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 08 領養流程 -->
+    <section id="s08" class="d-none">
+      <div class="container">
+        <div class="fs-2 fw-700 text-center mt-5 pb-5">領養流程</div>
+        <div class="row mt-3">
+          <div class="col-md-6 s08_text pb-5">
+            <div
+              class="d-flex align-items-center wow animate__fadeInLeftBig"
+              data-wow-duration="1.5s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <div>
+                <i class="fa-solid fa-award fa-6x ms-3 me-4 pb-3"></i>
+              </div>
+              <div class="pe-5 ps-3">
+                <h2>Step1&nbsp;了解領養條件</h2>
+                <p class="mb-2">
+                  在領養貓咪之前，進行足夠的研究，了解貓咪的性格和需要。
+                </p>
+                <p>判斷自身生活環境、經濟來源是否能夠給予寵物良好的生活。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 s08_text pb-5">
+            <div
+              class="d-flex align-items-center wow animate__fadeInRightBig"
+              data-wow-duration="2s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <div>
+                <i class="fa-solid fa-barcode fa-6x me-3 pb-3"></i>
+              </div>
+              <div class="pe-5 ps-3">
+                <h2>Step2&nbsp;互動和選擇</h2>
+                <p class="mb-2">
+                  嘗試與欲領養之貓咪互動，觀察牠們的性格、行為和互動方式。
+                </p>
+                <p>可能會有機會進行簡短的相處時間，確保你和貓咪之間的默契。</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 s08_text pb-5">
+            <div
+              class="d-flex align-items-center wow animate__fadeInLeftBig"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <div>
+                <i class="fa-solid fa-cookie-bite fa-6x me-3"></i>
+              </div>
+              <div class="pe-5 ps-3">
+                <h2>Step3&nbsp;填寫申請和面談</h2>
+                <p class="mb-2">
+                  提交領養申請表格，提供有關你的生活狀況、家庭成員、寵物經驗等的信息，以確保你對貓咪的照顧和需求有足夠的了解。
+                </p>
+                <p>
+                  面談時會提醒領養者貓咪健康狀況，包括接種疫苗日程、驅蟲等相關資訊、以及領養後須提供後續生活照片。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 s08_text pb-5">
+            <div
+              class="d-flex align-items-center wow animate__fadeInRightBig"
+              data-wow-duration="3s"
+              data-wow-delay="0s"
+              data-wow-iteration="1"
+            >
+              <div>
+                <i class="fa-solid fa-paw fa-6x me-3"></i>
+              </div>
+              <div class="pe-5 ps-3">
+                <h2>Step4&nbsp;簽署合約</h2>
+                <p class="mb-2">
+                  簽署領養合約，其中包括領養費用、責任承擔、照顧貓咪的承諾等內容。
+                </p>
+                <p>
+                  完成相關的付款程序，領養費用基於用於支付貓咪的醫療和基本照顧。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 10 領養人回饋-->
+    <section id="s10" class="s10 pb-3 d-none">
+      <h1 class="text-center pt-4">領養家庭回饋</h1>
+      <div class="row mx-5 p-3 justify-content-around">
+        <div
+          class="col-md-6 col-xl-3 s10_text_area bg-light px-4 py-3 wow animate__flipInX"
+          data-wow-duration="2s"
+          data-wow-delay="0s"
+          data-wow-iteration="1"
+        >
+          <div class="row">
+            <div class="col-md-5 s10_text_areaIn d-flex flex-column">
+              <div class="row">
+                <div class="col-12 p-0 s10_text_text01">
+                  貓咪在我們家裡找到了安慰和歸屬感。領養是一個美好的決定，讓我們建立了深厚的感情。
+                </div>
+                <div
+                  class="col-12 s10_text_text02 d-flex justify-content-end align-items-end"
+                >
+                  Soley
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 bg-cover s10_img01"></div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-xl-3 s10_text_area bg-light px-4 py-3 wow animate__flipInX"
+          data-wow-duration="2s"
+          data-wow-delay="0s"
+        >
+          <div class="row">
+            <div class="col-md-5 s10_text_areaIn d-flex flex-column">
+              <div class="row">
+                <div class="col-12 p-0 s10_text_text01">
+                  領養的貓咪帶來無盡的歡樂，個性獨特且聰明。我們家庭因此變得更加熱鬧有趣。
+                </div>
+                <div
+                  class="col-12 s10_text_text02 d-flex justify-content-end align-items-end"
+                >
+                  Ethan
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 bg-cover s10_img02"></div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-xl-3 s10_text_area bg-light px-4 py-3 wow animate__flipInX"
+          data-wow-duration="2s"
+          data-wow-delay="0s"
+        >
+          <div class="row">
+            <div class="col-md-5 s10_text_areaIn d-flex flex-column">
+              <div class="row">
+                <div class="col-12 p-0 s10_text_text01">
+                  貓咪自從來到家裡，生活充滿歡笑。領養是最好的選擇，牠成為家庭的一份子。
+                </div>
+                <div
+                  class="col-12 s10_text_text02 d-flex justify-content-end align-items-end"
+                >
+                  Ava&Jack
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 bg-cover s10_img03"></div>
+          </div>
+        </div>
+        <div
+          class="col-md-6 col-xl-3 s10_text_area bg-light px-4 py-3 wow animate__flipInX"
+          data-wow-duration="2s"
+          data-wow-delay="0s"
+        >
+          <div class="row">
+            <div class="col-md-5 s10_text_areaIn d-flex flex-column">
+              <div class="row">
+                <div class="col-12 p-0 s10_text_text01">
+                  領養的過程順利，貓咪從一開始就適應得很好。家庭因此多了一份溫馨和快樂。
+                </div>
+                <div
+                  class="col-12 s10_text_text02 d-flex justify-content-end align-items-end"
+                >
+                  Ian
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 bg-cover s10_img04"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 11 商品、貓咪連結-->
+    <section id="s11" class="">
+      <div class="row gx-0">
+        <div class="col-md-6 bg-cover s11_img01">
+          <div class="row gx-0">
+            <div class="col-md-7 text-dark p-4">
+              <div
+                class="s11_text wow animate__slideInDown"
+                data-wow-duration="1s"
+                data-wow-delay="0s"
+                data-wow-iteration="1"
+              >
+                <h1 class="mb-2">寵物零食</h1>
+                <p class="mb-3">前往查看寵物零食總覽</p>
+                <a
+                  href="http:\\192.168.1.118/demo/snakes_intro.html"
+                  target="_blank"
+                  ><button
+                    class="btn btn-outline-dark"
+                    data-wow-duration="1s"
+                    data-wow-delay="0s"
+                    data-wow-iteration="infinite"
+                  >
+                    購入商品&nbsp;&nbsp;<i
+                      class="s11_icon fa-solid fa-arrow-right"
+                    ></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 bg-cover s11_img02">
+          <div class="row gx-0">
+            <div class="col-md-7 text-dark p-4">
+              <div
+                class="s11_text wow animate__slideInDown"
+                data-wow-duration="1s"
+                data-wow-delay="0s"
+                data-wow-iteration="1"
+              >
+                <h1 class="mb-2">領養毛孩</h1>
+                <p class="mb-3">前往查看浪浪詳細介紹</p>
+                <a
+                  href="http:\\192.168.1.118/demo/cats_intro.html"
+                  target="_blank"
+                  ><button class="btn btn-outline-dark">
+                    前往官網&nbsp;&nbsp;<i
+                      class="s11_icon fa-solid fa-arrow-right"
+                    ></i></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 12 聯絡我們-->
+    <section id="s12" class="s12 d-none">
+      <div class="container mt-5">
+        <div class="row my-4">
+          <div class="col-md-6">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5147.745305891898!2d120.61676696777299!3d24.17153590101478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e048d342aa9%3A0x2b6f18a6783fa3b!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5Lit5b2w5oqV5YiG572y77yI6Ie65Lit6IG36KiT5bGA77yJ!5e0!3m2!1szh-TW!2stw!4v1704328731595!5m2!1szh-TW!2stw"
+              width="100%"
+              height="550"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="mb-3"
+            ></iframe>
+          </div>
+          <div
+            class="col-md-6 wow animate__bounceIn"
+            data-wow-duration="2s"
+            data-wow-delay="0s"
+            data-wow-iteration="1"
+          >
+            <div class="mb-3">
+              <label for="" class="form-label">姓名</label>
+              <input type="text" class="form-control is-invalid" />
+              <div class="valid-feedback">輸入符合規定</div>
+              <div class="invalid-feedback">輸入不符合規定!</div>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">電話</label>
+              <input type="phone" class="form-control is-valid" />
+              <div class="valid-feedback">輸入符合規定</div>
+              <div class="invalid-feedback">輸入不符合規定!</div>
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Email</label>
+              <input type="email" class="form-control" />
+            </div>
+            <!-- <div class="mb-3">
+              <label for="" class="form-label">人數</label>
+              <input type="number" class="form-control" min="1" max="10">
+            </div> -->
+            <div class="mb-3">
+              <label for="" class="form-label">預約日期</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div>
+              <label for="form-lable">預約時段</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  上午10:00~14:00
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  下午15:00~19:00
+                </label>
+              </div>
+            </div>
+            <div class="text-end">
+              <i
+                class="fa-regular fa-hand-point-down fa-2x pe-3 wow animate__bounce text-secondary"
+                data-wow-duration="1.5s"
+                data-wow-delay="0s"
+                data-wow-iteration="infinite"
+              ></i>
+            </div>
+            <div class="text-end">
+              <button class="btn btn-outline-secondary me-2">取消</button>
+              <button class="btn btn-primary">確認</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 14 最新消息-->
+    <section id="s14" class="d-none">
+      <div class="row gx-0">
+        <div class="col-md-6 s14_img01 py-5 bg-cover px-4">
+          <div class="row justify-content-end">
+            <div
+              class="col-md-7 s14_text_area offset-4 text-white rounded-4 p-3"
+            >
+              <small class="bg-warning rounded-1 p-1"
+                >加入我們&nbsp;<i
+                  class="fa-solid fa-heart wow animate__heartBeat"
+                  data-wow-duration="1s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="infinite"
+                  fa-2x
+                ></i
+              ></small>
+              <h2 class="mt-2">徵才-PT數名</h2>
+              <ul class="list-unstyled">
+                <li>1.接待與客戶服務：引導客人入座、解決顧客疑問</li>
+                <li>
+                  2.點餐和結帳：熟悉收銀機，並協助顧客了解餐點內容與服務規範
+                </li>
+                <li>3.清潔和維護:維護用餐區的清潔與貓咪活動範圍清潔</li>
+                <li>
+                  4.貓咪監管：注意寵物行為，確保環境的舒適度，提醒顧客遵守店內規範
+                </li>
+                <li>5.須輪調用餐區域與貓咪活動區域</li>
+                <li>6.時薪NT200</li>
+              </ul>
+              <a href="#" class="btn btn-outline-danger">更多資訊</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 s14_img02 py-5 bg-cover px-4">
+          <div class="row justify-content-end">
+            <div
+              class="col-md-7 s14_text_area offset-4 text-white rounded-4 p-2"
+            >
+              <small class="bg-warning rounded-1 p-1"
+                >加入我們&nbsp;<i
+                  class="fa-solid fa-heart wow animate__heartBeat"
+                  data-wow-duration="1s"
+                  data-wow-delay="0s"
+                  data-wow-iteration="infinite"
+                  fa-2x
+                ></i
+              ></small>
+              <h2 class="mt-2">徵才-寵物照護員</h2>
+              <ul class="list-unstyled">
+                <li>1.寵物照顧和監管：提供專業的寵物照顧，包括餵食、清潔</li>
+                <li>
+                  2.培訓和社交：協助訓練寵物，建立與其他貓咪及人類良好的互動關係
+                </li>
+                <li>3.醫療照護：處理寵物可能的健康問題或緊急情況</li>
+                <li>4.與客戶互動：提供欲領養人有關他們貓咪的相關資訊</li>
+                <li>
+                  5.緊急應變：在發生寵物健康或行為問題時，迅速而有效地處理
+                </li>
+                <li>6.月薪NT50k</li>
+              </ul>
+              <a href="#" class="btn btn-outline-danger">更多資訊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 15 其他連結-->
+    <section id="s15" class="d-none">
+      <div class="container">
+        <ul
+          class="nav wow animate__fadeInBottomLeft"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+          data-wow-iteration="1"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"
+              >Copy right Cat.2024</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">蝦皮購物商城</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script type="module" src="./js/reg.js"></script>
+    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/member.js"></script>
+    <script type="module" src="./js/logout.js"></script>
+    <script
+      type="module"
+      src="js/memberUpdate.js"
+    ></script>
+    <script
+      type="module"
+      src="js/memberPwdUpdate.js"
+    ></script>
+    <script>
+      //WOW
+      new WOW().init();
+
+      // counter
+      const counterUp = window.counterUp.default;
+      const callback = (entries) => {
+        entries.forEach((entry) => {
+          const el = entry.target;
+          if (entry.isIntersecting && !el.classList.contains("is-visible")) {
+            counterUp(el, {
+              duration: 1500,
+              delay: 16,
+            });
+            el.classList.add("is-visible");
+          }
+        });
+      };
+
+      const IO = new IntersectionObserver(callback, { threshold: 1 });
+      // HTML內要有.counter (此方法只會跑動一次, 所以將class設不同名稱, 讓他每個名稱都可以跑動)
+      const el01 = document.querySelector(".counter01");
+      IO.observe(el01);
+      const el02 = document.querySelector(".counter02");
+      IO.observe(el02);
+      const el03 = document.querySelector(".counter03");
+      IO.observe(el03);
+      const el04 = document.querySelector(".counter04");
+      IO.observe(el04);
+    </script>
+  </body>
+</html>
