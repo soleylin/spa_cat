@@ -78,7 +78,7 @@ $(function () {
 
       $.ajax({
         type: "POST",
-        url: "soleystudio.000webhostapp.com/spa_cat-api/memberPwd-Update-api.php",
+        url: "https://soleystudio.000webhostapp.com/spa_cat-api/memberPwd-Update-api.php",
         data: JSON.stringify(dataJSON),
         dataType: "json",
         success: showdata_memberPwd_update,

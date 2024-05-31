@@ -28,7 +28,7 @@ $(function () {
     console.log(JSON.stringify(dataJSON));
     $.ajax({
       type: "POST",
-      url: "soleystudio.000webhostapp.com/spa_cat-api/member-Login-api.php",
+      url: "https://soleystudio.000webhostapp.com/spa_cat-api/member-Login-api.php",
       data: JSON.stringify(dataJSON),
       dataType: "json",
       success: showdata_login,

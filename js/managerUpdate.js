@@ -35,7 +35,7 @@ $(function () {
 
     $.ajax({
       type: "POST",
-      url: "soleystudio.000webhostapp.com/spa_cat-api/manager-Update-api.php",
+      url: "https://soleystudio.000webhostapp.com/spa_cat-api/manager-Update-api.php",
       data: JSON.stringify(dataJSON),
       dataType: "json",
       success: showdata_manager_update,
@@ -83,7 +83,7 @@ function update_data() {
   clear_data();
   $.ajax({
     type: "GET",
-    url: "soleystudio.000webhostapp.com/spa_cat-api/memberlist-Read-api.php",
+    url: "https://soleystudio.000webhostapp.com/spa_cat-api/memberlist-Read-api.php",
     dataType: "json",
     //關閉非同步 (先串接資料才監聽 / 同步->串接資料與監聽同時進行, 只會監聽到第一筆讀取的資料)
     async: false,

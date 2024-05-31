@@ -30,7 +30,7 @@ $(function () {
 
       $.ajax({
         type: "POST",
-        url: "soleystudio.000webhostapp.com/spa_cat-api/member-Update-api.php",
+        url: "https://soleystudio.000webhostapp.com/spa_cat-api/member-Update-api.php",
         data: JSON.stringify(dataJSON),
         dataType: "json",
         success: showdata_member_update,
