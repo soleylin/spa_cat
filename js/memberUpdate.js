@@ -56,7 +56,7 @@ function showdata_member_update(data) {
     }).then((result) => {
       if (result.isConfirmed) {
         console.log("memberUpdate_ok");
-        location.href = "soleylin.github.io/spa_cat/spa_cat.html";
+        location.href = "https://soleylin.github.io/spa_cat/spa_cat.html";
       }
     });
   } else {
