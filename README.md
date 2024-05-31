@@ -18,8 +18,7 @@
 
 > 後臺頁面
 
-![image](https://github.com/soleylin/spa_cat/assets/160801901/1546a4f9-7948-4b17-8214-570d1afd3f60)
-
+![image](https://github.com/soleylin/spa_cat/assets/160801901/4d7ce51a-733f-4e95-a189-720fbc8ace93)
 
 
 ## 專案技術
