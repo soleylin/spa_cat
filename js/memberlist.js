@@ -91,7 +91,7 @@ function showdata(data) {
     }
     //parseInt: 無條件捨去, 取正整數
     //page: 取得key位在第幾個一維陣列(第幾頁)
-    var page = parseInt(key / 3);
+    var page = parseInt(key / 10);
     //把item放入每個對應德一維陣列
     newData[page].push(item);
   });
