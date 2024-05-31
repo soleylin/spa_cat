@@ -108,7 +108,7 @@ function showdata_memberPwd_update(data) {
       confirmButtonText: "確定",
     }).then((result) => {
       if (result.isConfirmed) {
-        location.href = "https://soleylin.github.io/spa_cat/spa_cat.html";
+        location.href = "https://soleylin.github.io/spa_cat";
       }
     });
   } else {
