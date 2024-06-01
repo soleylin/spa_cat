@@ -187,7 +187,6 @@ function showdata(data) {
       confirmButtonText: "確定",
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log(data);
         setCookie("uid", data.data, 7);
         location.href = "https://soleylin.github.io/spa_cat";
       }
