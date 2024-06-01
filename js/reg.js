@@ -141,7 +141,6 @@ $(function () {
       dataJSON["password"] = $("#reg_pwd").val();
       dataJSON["email"] = $("#reg_email").val();
       dataJSON["manager"] = "N";
-      dataJSON["uid01"] = uid;
 
       $.ajax({
         type: "POST",
