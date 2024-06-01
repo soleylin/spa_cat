@@ -136,7 +136,6 @@ $(function () {
   //監聽確認鈕
   $("#reg_ok_btn").click(function () {
     if (flag_username && flag_pwd && flag_re_pwd && flag_email && flag_agree) {
-      CreateUid01();
       var dataJSON = {};
       dataJSON["userName"] = $("#reg_username").val();
       dataJSON["password"] = $("#reg_pwd").val();
@@ -189,6 +188,7 @@ function showdata(data) {
       confirmButtonText: "確定",
     }).then((result) => {
       if (result.isConfirmed) {
+        setCookie("uid", data.data[0].uid01, 7);
         location.href = "https://soleylin.github.io/spa_cat";
       }
     });
@@ -221,9 +221,4 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-function CreateUid01() {
-  var uniqid = Date.now().toString() + Math.random().toString();
-  uid01 = sha256(uniqid);
-  return uid01.substring(0, 8);
 }
