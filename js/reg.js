@@ -3,7 +3,7 @@ var flag_pwd = false;
 var flag_re_pwd = false;
 var flag_email = false;
 var flag_agree = false; //會員條款同意
-var uid01 = substr(hash("sha256", uniqid(time())), 0, 8);
+var uid01;
 
 $(function () {
   //監聽reg_btn
@@ -136,11 +136,12 @@ $(function () {
   //監聽確認鈕
   $("#reg_ok_btn").click(function () {
     if (flag_username && flag_pwd && flag_re_pwd && flag_email && flag_agree) {
+      uid01();
       var dataJSON = {};
       dataJSON["userName"] = $("#reg_username").val();
       dataJSON["password"] = $("#reg_pwd").val();
       dataJSON["email"] = $("#reg_email").val();
-      dataJSON["manager"] = "N";      
+      dataJSON["manager"] = "N";
       dataJSON["uid01"] = uid;
 
       $.ajax({
@@ -220,4 +221,9 @@ function setCookie(cname, cvalue, exdays) {
   d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function uid01() {
+  var uniqid = Date.now().toString() + Math.random().toString();
+  uid01 = sha256(uniqid);
+  return uid01.substring(0, 8);
 }
