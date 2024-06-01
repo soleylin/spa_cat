@@ -12,7 +12,7 @@ if ($data != "") {
         $pwd = password_hash($mydata["password"], PASSWORD_DEFAULT);
         $email = $mydata["email"];
         $manager = $mydata["manager"];
-        $uid01 = $mydata["uid01"];
+        $uid01 = substr(hash("sha256", uniqid(time())), 0, 8);
 
         header("Access-Control-Allow-Origin: https://soleylin.github.io");
         $servername = "localhost";
@@ -29,7 +29,9 @@ if ($data != "") {
         $sql = "INSERT INTO cat_member (userName, password, email, manager, uid01) VALUES ('$user','$pwd','$email','$manager','$uid01')";
 
         if (mysqli_query($conn, $sql)) {
-            echo '{"state" : true, "message":"註冊成功！"}';
+            $mydata = array();
+            $mydata[] = $uid;
+            echo '{"state" : true, "data": ' . json_encode($mydata) . ', "message":"註冊成功！"}';
         } else {
             echo '{"state" : false, "message" :"註冊失敗！"}';
         }
