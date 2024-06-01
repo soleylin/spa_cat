@@ -340,6 +340,9 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .s01 {
+    background-color: var(--mycolor38);
+  }
   .s13_box01 {
     max-height: 50%;
   }
