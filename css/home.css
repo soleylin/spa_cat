@@ -336,6 +336,9 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .s02_navbar {
+    background-color: var(--mycolor37) !important;
+  }
   .s02_navbar .fa-paw,
   .s02_navbar .nav-link {
     color: var(--mycolor00);
