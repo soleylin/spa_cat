@@ -37,11 +37,7 @@
   font-size: 18px;
 }
 .s05 {
-  background-image: linear-gradient(
-      180deg,
-      var(--bgcolor33),
-      var(--bgcolor36)
-    ),
+  background-image: linear-gradient(180deg, var(--bgcolor33), var(--bgcolor36)),
     url(/spa_cat/img/animal/cat/cat-w-10-reverse.jpg);
   background-attachment: fixed;
 }
@@ -340,8 +336,9 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .s01 {
-    background-color: var(--mycolor38);
+  .s02_navbar .fa-paw,
+  .s02_navbar .nav-link {
+    color: var(--mycolor00);
   }
   .s13_box01 {
     max-height: 50%;
