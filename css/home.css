@@ -43,7 +43,7 @@
       var(--bgcolor33),
       var(--bgcolor36)
     ),
-    url(/spa_cat/img/animal/cat/cat-w-10-reverse.png);
+    url(/spa_cat/img/animal/cat/cat-w-10-reverse.jpg);
   background-attachment: fixed;
 }
 .s05_text01 {
@@ -252,6 +252,12 @@
   }
   .s04_text_area .text_p {
     text-align: start;
+  }
+  .s04_img {
+    background-image: url(/spa_cat/img/animal/cat/cat-bg-1-1-l.jpg);
+    height: 800px;
+    background-attachment: fixed;
+    background-position: 0px;
   }
   .s05 {
     background-image: linear-gradient(
