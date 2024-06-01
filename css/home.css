@@ -336,6 +336,14 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  #memberlist_btn,
+  #login_btn,
+  #reg_btn,
+  #member_btn,
+  #logout_btn {
+    margin-left: 0 !important;
+    margin-top: 6px;
+  }
   .s02_navbar {
     background-color: var(--mycolor37) !important;
   }
