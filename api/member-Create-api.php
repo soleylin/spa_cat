@@ -6,12 +6,13 @@ if ($data != "") {
     $mydata = array();
     $mydata = json_decode($data, true);
 
-    if (isset($mydata["userName"]) && isset($mydata["password"]) && isset($mydata["email"]) && isset($mydata["manager"]) && $mydata["userName"] != "" && $mydata["password"] != "" && $mydata["email"] != "" && $mydata["manager"] != "") {
+    if (isset($mydata["userName"]) && isset($mydata["password"]) && isset($mydata["email"]) && isset($mydata["manager"]) && isset($mydata["uid01"]) && $mydata["userName"] != "" && $mydata["password"] != "" && $mydata["email"] != "" && $mydata["manager"] != "" && $mydata["uid01"] != "") {
 
         $user = $mydata["userName"];
         $pwd = password_hash($mydata["password"], PASSWORD_DEFAULT);
         $email = $mydata["email"];
         $manager = $mydata["manager"];
+        $uid01 = $mydata["uid01"];
 
         header("Access-Control-Allow-Origin: https://soleylin.github.io");
         $servername = "localhost";
@@ -25,7 +26,7 @@ if ($data != "") {
             die("連線失敗" . mysqli_connect_error());
         }
 
-        $sql = "INSERT INTO cat_member (userName, password, email, manager) VALUES ('$user','$pwd','$email','$manager')";
+        $sql = "INSERT INTO cat_member (userName, password, email, manager, uid01) VALUES ('$user','$pwd','$email','$manager','$uid01')";
 
         if (mysqli_query($conn, $sql)) {
             echo '{"state" : true, "message":"註冊成功！"}';
